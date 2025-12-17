@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Basic HTML 1</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Kyle Gaffney">
+    </head>
+    <body>
+        <script src="Basic_JavaScript_1.js"></script>
+        <button onclick="My_First_Function()">
+            Click Here
+        </button>
+        <p id="Irish"></p>
+        <script>
+            function My_First_Function()
+            {
+                var String = "Kiss me I'm Irish";
+                var result = String.fontcolor("green");
+                document.getElementById("Irish").innerHTML = result;
+            }
+        </script>
+    </body>
+</html>
