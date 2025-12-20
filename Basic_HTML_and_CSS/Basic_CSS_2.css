@@ -1,7 +1,12 @@
 p
-    {
-        color: green;
-        background-color: lightblue;
-        font-size: small;
-        text-align: right;
-    }
+{
+    color: green;
+    background-color: lightblue;
+    font-size: small;
+    text-align: right;
+}
+
+footer 
+{
+  text-shadow: 2px 2px 4px red;
+}
