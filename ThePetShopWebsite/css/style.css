@@ -3,6 +3,7 @@
 
 body{
     background-color:white;
+    overflow-x: hidden; /*hides the bottom left right scroll bar when elements stretch beyond border*/
 }
 
 /*nav bar*/
@@ -13,5 +14,33 @@ li{
 
 a{
     font-family: "Roboto", sans-serif; /*font from google*/
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 1px .5px 4px rgba(46, 31, 31, 0.5);
+    color:white;
+    text-decoration: none;/*removes default link styling*/
+}
 
+a:hover{
+    color:#d7eaf7;/*changes the color when the user hovers*/
+}
+
+.nav-bar{
+    background-color: #216391;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    /*the following minus margins stretch the navbar background beyond the web browser screen edge*/
+    margin-top: -8px;
+    margin-left: -10px;
+    margin-right: -10px;
+
+    position: sticky; /*creates a sticky element that stays in the same location on the browser screen*/
+    top: 0; /*tells the browser to stick the element at the top of the page when user scrolls*/
+}
+
+/*creates a separator line under home and contact links */
+#nav-border{
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ffffff;
 }
