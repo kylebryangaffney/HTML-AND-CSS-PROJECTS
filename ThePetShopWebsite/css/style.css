@@ -95,3 +95,32 @@ img{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 
                 0 6px 20px 0 rgba(0, 0, 0, 19);
 }
+
+.column{
+    float: left;
+    width: 48%; /*places images side by side when the float property is used*/
+    padding: 10px;
+}
+
+/*groups elements inside a div element*/
+.container{
+    background-size: 100% !important;
+    margin: 0px -60px 50px -40px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+/*part of .container class selector to display elemts in a table like format*/
+.container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*sets size of div elements to hold a centered image*/
+.image-container{
+    position: reletive;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+}
