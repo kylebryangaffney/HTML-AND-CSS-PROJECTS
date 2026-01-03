@@ -1,5 +1,7 @@
-/* import link for roboto font from */
+/* import link for roboto font from google*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* import link for mukta fonts from google */
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
     background-color:white;
@@ -43,4 +45,53 @@ a:hover{
 #nav-border{
     padding-bottom: 10px;
     border-bottom: 3px solid #ffffff;
+}
+
+/*headers*/
+h1, h2, h3 {
+    color: #0a3f63;
+    text-align: center;
+    font-family: "Roboto", sans-serif; /* font from google fonts */
+    text-shadow: 1px .5px 4px rgba(0, 0, 0, 0.5);
+    margin: 0px;
+}
+
+h1{
+    font-size: 60px;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#contact-h3{
+    text-shadow: none;
+}
+
+/* creates a text color change animatoin for h1 tags*/
+@keyframes color-text {
+    0%{color: #b5e1ff;}
+    100%{color: #0a3f63;}
+}
+
+/* calls animation by name in the css selector to apply it to a specific html element*/
+.animate-text{
+    animation: color-text 4s;
+}
+
+/* body content*/
+img{
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 
+                0 6px 20px 0 rgba(0, 0, 0, 19);
 }
