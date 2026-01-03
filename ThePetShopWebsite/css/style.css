@@ -39,6 +39,8 @@ a:hover{
 
     position: sticky; /*creates a sticky element that stays in the same location on the browser screen*/
     top: 0; /*tells the browser to stick the element at the top of the page when user scrolls*/
+    z-index: 9; /*sets stack layer of nav bar to scroll over all elements*/
+
 }
 
 /*creates a separator line under home and contact links */
@@ -119,8 +121,48 @@ img{
 
 /*sets size of div elements to hold a centered image*/
 .image-container{
-    position: reletive;
+    position: relative;
     width: 500px;
     margin: auto;
     margin-bottom: 50px;
+}
+
+/*sets background color in each div with an image specified by id name for each image */
+#cat{
+    background-color: #d7eaf7;
+}
+#dog{
+    background-color: #c3e0c5;
+}
+#rabbit{
+    background-color: #c3e0c5;
+}
+#guineapig{
+    background-color: #d7eaf7;
+}
+#fish{
+    background-color: #d7eaf7;
+}
+#reptile{
+    background-color: #c3e0c5;
+}
+
+/*sets properties for overlay of images*/
+.overlay{
+    position: absolute;
+    top: -13px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 350px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+}
+
+/*triggers the overlay class to 60% opacity*/
+.overlay:hover{
+    opacity: 0.6;
 }
