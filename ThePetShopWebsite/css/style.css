@@ -150,7 +150,7 @@ img{
 /*sets properties for overlay of images*/
 .overlay{
     position: absolute;
-    top: -13px;
+    top: -14px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -165,4 +165,63 @@ img{
 /*triggers the overlay class to 60% opacity*/
 .overlay:hover{
     opacity: 0.6;
+}
+
+/*targets video on page*/
+iframe{
+    display: table;
+    margin: auto;
+    border-radius: 20px;
+    border: none;
+}
+
+/*styles the video div element*/
+#video{
+    background-color: #c3e0c5;
+    padding-top: 5px; /*adds inline space so the elements do not sit on edge of the div*/
+    padding-bottom: 50px;
+}
+
+/*footer*/
+footer{
+    background-color: #216391;
+    margin-top: 50px;
+    /*negative margins stretch the background beyond the browser screen edge on left and right*/
+    margin-right: -10px;
+    margin-left: -10px;
+    bottom: 0; /*positions footer at the bottom of screen*/
+}
+
+/*styles table elements in footer element*/
+table{
+    width: 100%;
+}
+
+td{
+    text-align: center;
+    /*divides 4 columns equally so each takes up 1/4 of the table width*/
+    width: 25%;
+}
+
+/*styles paragraphs in table data elements*/
+td p{
+    font-family: "Roboto", sans-serif; /*font from google*/
+    color:white;
+    text-decoration: none;/*removes default link styling*/
+}
+
+/*form css*/
+form{
+    padding: 15px;
+    display: table;
+    margin: auto;
+}
+
+input{
+    border: 2px solid rbg(165, 165, 165);
+    border-radius: 2px;
+    padding: 1px;
+    margin: 10px 15px 10px 0px;
+    font-size: 20px;
+    color: rbg(165, 165, 165);
 }
