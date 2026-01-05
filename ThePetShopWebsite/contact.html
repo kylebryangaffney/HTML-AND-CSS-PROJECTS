@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Contact Us</title>
-        <meta charset="UTF-8">
-        <meta name="author" content="Kyle Gaffney">
-        <meta name="description" content="Contact Page For The Pet Shop">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <!--nav bar-->
-        <nav class="nav-bar">
-            <ul id="nav-border">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <!--header-->
-        <header>
+
+<head>
+    <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kyle Gaffney">
+    <meta name="description" content="Contact Page For The Pet Shop">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--nav bar-->
+    <nav class="nav-bar">
+        <ul id="nav-border">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!--header-->
+    <header>
+        <div>
+            <h1 class="animate-text">Contact Us</h1>
+        </div>
+    </header>
+    <!--form-->
+    <section>
+        <div>
+            <h3 id="contact-h3">Please provide your contact information
+                and include a brief message.
+            </h3>
             <div>
-                <h1 class="animate-text">Contact Us</h1>
+                <form>
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <br>
+                    <input type="email" placeholder="Email">
+                    <input type="tel" placeholder="Phone Number">
+                    <br>
+                    <input type="checkbox" id="Newsletter">
+                    <label for="Newsletter">Receive The Pet Shop monthly Newsletter?</label>
+                    <br>
+                    <textarea placeholder="Type message here"></textarea>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
             </div>
-        </header>
-        <!--form-->
-        <section>
-            <div>
-                <h3 id="contact-h3">Please provide your contact information
-                    and include a brief message.
-                </h3>
-                <div>
-                    <form>
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
-                        <br>
-                        <input type="email" placeholder="Email">
-                        <input type="tel" placeholder="Phone Number">
-                        <br>
-                        <input type="checkbox" id="Newsletter">
-                        <label for="Newsletter">Receive The Pet Shop monthly Newsletter?</label>
-                        <br>
-                        <textarea placeholder="Type message here"></textarea>
-                        <br>
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
-            </div>
-        </section>
-        <!--footer-->
-        <footer>
+        </div>
+    </section>
+    <!--footer-->
+    <footer>
         <table>
             <tr>
                 <td>
@@ -66,5 +68,6 @@
             </tr>
         </table>
     </footer>
-    </body>
+</body>
+
 </html>
