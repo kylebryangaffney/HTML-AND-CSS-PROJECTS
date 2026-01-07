@@ -1,3 +1,11 @@
+/*
+add another image effect rotate image 4
+*/
+
+/* import link for roboto font from google*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 /*nav bar*/
 .nav-bar {
     position: sticky;
@@ -21,9 +29,9 @@ ul {
 
 a {
     display: block;
-    font-family: Calibri, sans-serif;
-    font-size: 23px;
-    font-weight: 600;
+    font-family: "Roboto", sans-serif; /*font from google*/
+    font-size: 20px;
+    font-weight: 700;
     color: white;
     text-decoration: none;
     /*removes default underline decoration*/
@@ -73,17 +81,22 @@ a:hover,
 
 /*styles first anchor element in rollover menue div tag*/
 .rollover-menu a:hover:nth-child(1) {
-    background-color: rgb(117, 20, 20);
+    background-color: rgb(219, 42, 42);
 }
 
 /*styles second anchor element in rollover menue div tag*/
 .rollover-menu a:hover:nth-child(2) {
-    background-color: rgb(87, 7, 7);
+    background-color: rgb(217, 21, 21);
 }
 
 /*styles third anchor element in rollover menue div tag*/
 .rollover-menu a:hover:nth-child(3) {
-    background-color: rgb(48, 2, 2);
+    background-color: rgb(105, 9, 9);
+}
+
+/*styles fourth anchor element in rollover menue div tag*/
+.rollover-menu a:hover:nth-child(4) {
+    background-color: rgb(63, 8, 8);
 }
 
 /*footer*/
@@ -99,10 +112,10 @@ footer {
 
 /*styles footer text*/
 .footer-text {
-    font-family: Calibri, sans-serif;
-    font-size: 23px;
-    font-weight: 400;
-    color: rgb(228, 159, 0);
+    font-family: "Roboto", sans-serif; /*font from google*/
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(228, 156, 0);
     text-align: center;
 }
 
@@ -119,10 +132,12 @@ img {
     padding-top: 120px;
 }
 
-/*creates uniform space from the navbar for image 3*/
-#image3 {
+/*creates uniform space from the navbar for image 4*/
+#image4 {
     padding-bottom: 170px;
 }
+
+
 
 /*image 1*/
 /*overlays a dark grey over first image*/
