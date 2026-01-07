@@ -1,27 +1,34 @@
 /*nav bar*/
-.nav-bar{
+.nav-bar {
     position: sticky;
     top: 0;
-    z-index: 4; /*sets the position of the navbar in the stack layer so it is on top*/
+    z-index: 4;
+    /*sets the position of the navbar in the stack layer so it is on top*/
 }
 
-ul{
-    list-style-type: none; /*removes default bullet point styles for list elements*/
+ul {
+    list-style-type: none;
+    /*removes default bullet point styles for list elements*/
     background-color: #363636;
-    margin: -10px -10px 0px -10px; /*top right bottom left*/
-    overflow: hidden; /*hides excess margin space expanding past the browswer window edge prevents left right scroll bar*/
-    display: flex; /*clreates flex container for elements to take up all the available width*/
+    margin: -10px -10px 0px -10px;
+    /*top right bottom left*/
+    overflow: hidden;
+    /*hides excess margin space expanding past the browswer window edge prevents left right scroll bar*/
+    display: flex;
+    /*clreates flex container for elements to take up all the available width*/
     align-items: center;
 }
 
-a{
+a {
     display: block;
     font-family: Calibri, sans-serif;
     font-size: 23px;
     font-weight: 600;
     color: white;
-    text-decoration: none; /*removes default underline decoration*/
-    text-transform: uppercase; /*sets all text to uppercase regardless of original value in html*/
+    text-decoration: none;
+    /*removes default underline decoration*/
+    text-transform: uppercase;
+    /*sets all text to uppercase regardless of original value in html*/
     width: 100px;
     padding: 30px;
     text-align: center;
@@ -30,62 +37,68 @@ a{
 
 /*nav bar roll over effects*/
 /*drop hover applies when any link in images list is hovered over*/
-a:hover, .drop:hover{
+a:hover,
+.drop:hover {
     background-color: rgb(228, 159, 0);
     color: rgb(49, 49, 49);
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7); /*offset x, offset y, blur radius, spread radius*/
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
+    /*offset x, offset y, blur radius, spread radius*/
     transition: background-color 0.3s ease-in;
 }
 
 /*hides and styles anchor links within images link div tag*/
-.rollover-menu{
+.rollover-menu {
     display: none;
     position: absolute;
     background-color: white;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /*offset x, offset y, blur radius, spread radius*/
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /*offset x, offset y, blur radius, spread radius*/
 }
 
 /*displays anchor elements when user hovers pointer over images link*/
-.drop:hover .rollover-menu{
+.drop:hover .rollover-menu {
     display: block;
 }
 
 
 /*styles anchor elements within div element containing rollover menu class selector*/
-.rollover-menu a{
+.rollover-menu a {
     color: #363636;
 }
 
 /*styles anchor elements within div element containing rollover menue when pointer hovers over the element*/
-.rollover-menu a:hover{
+.rollover-menu a:hover {
     color: white;
 }
 
 /*styles first anchor element in rollover menue div tag*/
-.rollover-menu a:hover:nth-child(1){
+.rollover-menu a:hover:nth-child(1) {
     background-color: rgb(117, 20, 20);
 }
 
 /*styles second anchor element in rollover menue div tag*/
-.rollover-menu a:hover:nth-child(2){
+.rollover-menu a:hover:nth-child(2) {
     background-color: rgb(87, 7, 7);
 }
+
 /*styles third anchor element in rollover menue div tag*/
-.rollover-menu a:hover:nth-child(3){
+.rollover-menu a:hover:nth-child(3) {
     background-color: rgb(48, 2, 2);
 }
 
 /*footer*/
-footer{
+footer {
     background-color: #363636;
-    margin: 30px -10px -10px -10px; /*top right bottom left*/
-    overflow: hidden; /*hides excess margin space expanding past browser dimentions*/
+    margin: 30px -10px -10px -10px;
+    /*top right bottom left*/
+    overflow: hidden;
+    /*hides excess margin space expanding past browser dimentions*/
     height: 70px;
 
 }
 
 /*styles footer text*/
-.footer-text{
+.footer-text {
     font-family: Calibri, sans-serif;
     font-size: 23px;
     font-weight: 400;
@@ -94,26 +107,26 @@ footer{
 }
 
 /*images*/
-img{
+img {
     width: 700px;
     height: 550px;
 }
 
 /*creates image container elements*/
-.image-container{
+.image-container {
     display: flex;
     justify-content: center;
     padding-top: 120px;
 }
 
 /*creates uniform space from the navbar for image 3*/
-#image3{
+#image3 {
     padding-bottom: 170px;
 }
 
 /*image 1*/
 /*overlays a dark grey over first image*/
-.overlay{
+.overlay {
     position: absolute;
     width: 700px;
     height: 550px;
@@ -123,7 +136,85 @@ img{
 }
 
 /*triggers hover efect overlay for image 1 with 60% opacity*/
-.overlay:hover{
+.overlay:hover {
     opacity: 0.6;
-    
+}
+
+/*image 2*/
+/*sets base size of image 2 for zoom effect*/
+.zoom {
+    transform: scale(1);
+    transition: 0.75s ease-out;
+    /*smooth transition to original size*/
+    z-index: 3;
+    /*sets image position behind nav bar*/
+}
+
+/*creates zoom effect on image 2*/
+.zoom:hover {
+    transform: scale(1.5);
+    /*scales image 2 to grow*/
+    transition: 0.75s ease-out;
+}
+
+/*image 3*/
+/*creates position of animation burst and hides any overflow of shape size going beyond image 3*/
+.circle {
+    position: relative;
+    margin: 0px;
+    overflow: hidden;
+}
+
+/*sets burst animation shape and position prior to hover effect*/
+.circle:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    /*creates a circle shape*/
+    opacity: 0;
+    /*hides shape until animation is triggered by hover*/
+    top: 50%;
+    left: 50%;
+    /*positions circle to center of image*/
+    transform: translate(-50%, -50%);
+    /*allows circle to evenly expand on image 3*/
+    animation: burst-reverse 1s;
+}
+
+/*triggers the hover effect on circle class selecter:before*/
+.circle:hover::before {
+    animation: burst 1s;
+    animation-fill-mode: forwards;
+}
+
+/*creates a growing circle effect*/
+@keyframes burst {
+    0% /*animation starts at 0%*/ {
+        opacity: 0.2;
+        background-color: rgb(224, 224, 224);
+    }
+
+    100% /*100% ends animation*/ {
+        opacity: 0.7;
+        background-color: rgb(224, 224, 224);
+        width: 300%;
+        height: 300%;
+    }
+}
+
+/*animation of circle shrinking back to center of image*/
+@keyframes burst-reverse {
+    0% {
+        opacity: 0.7;
+        background-color: rgb(224, 224, 224);
+        width: 300%;
+        height: 300%;
+    }
+
+    100% {
+        opacity: 0.2;
+        background-color: rgb(224, 224, 224);
+    }
 }

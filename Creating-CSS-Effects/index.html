@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Creating Effects with CSS</title>
-        <meta charset="UTF-8">
-        <meta name="author" content="Kyle Gaffney">
-        <link rel="stylesheet" href="CSS/style.css">
-    </head>
-    <body>
-        <!--nav bar-->
-        <nav class="nav-bar">
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li class="drop">
-                    <a href="#">Images</a>
-                    <div class="rollover-menu">
-                        <a href="#image1">Image 1</a>
-                        <a href="#image2">Image 2</a>
-                        <a href="#image3">Image 3</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>       
-        <!--images-->
-        <section>
-            <!--image one-->
-            <div class="image-container" id="image1">
-                <img src="images/japan-one.jpg">
-                <div class="overlay"></div>
-            </div>
-            <!--image two-->
-            <div class="image-container" id="image2">
-                <img src="images/japan-two.jpg">
-            </div>
-            <!--image three-->
-            <div class="image-container" id="image3">
+
+<head>
+    <title>Creating Effects with CSS</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kyle Gaffney">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <!--nav bar-->
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li class="drop">
+                <a href="#">Images</a>
+                <div class="rollover-menu">
+                    <a href="#image1">Image 1</a>
+                    <a href="#image2">Image 2</a>
+                    <a href="#image3">Image 3</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!--images-->
+    <section>
+        <!--image one-->
+        <div class="image-container" id="image1">
+            <img src="images/japan-one.jpg">
+            <div class="overlay"></div>
+        </div>
+        <!--image two-->
+        <div class="image-container" id="image2">
+            <img src="images/japan-two.jpg" class="zoom">
+        </div>
+        <!--image three-->
+        <div class="image-container" id="image3">
+            <div class="circle">
                 <img src="images/japan-three.jpg">
             </div>
-        </section>   
-        <!--footer-->
-        <footer class="footer-text">
-            <div>
-                <p>The Tech Acadamy &copy</p>
-            </div>
-        </footer>
-    </body>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="footer-text">
+        <div>
+            <p>The Tech Acadamy &copy</p>
+        </div>
+    </footer>
+</body>
+
 </html>
