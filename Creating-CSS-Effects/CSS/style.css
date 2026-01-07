@@ -1,0 +1,53 @@
+/*nav bar*/
+.nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 4; /*sets the position of the navbar in the stack layer so it is on top*/
+}
+
+ul{
+    list-style-type: none; /*removes default bullet point styles for list elements*/
+    background-color: #363636;
+    margin: -10px -10px 0px -10px; /*top right bottom left*/
+    overflow: hidden; /*hides excess margin space expanding past the browswer window edge prevents left right scroll bar*/
+    display: flex; /*clreates flex container for elements to take up all the available width*/
+    align-items: center;
+}
+
+a{
+    display: block;
+    font-family: Calibri, sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none; /*removes default underline decoration*/
+    text-transform: uppercase; /*sets all text to uppercase regardless of original value in html*/
+    width: 100px;
+    padding: 30px;
+    text-align: center;
+    transition: background-color 0.4s ease-in;
+}
+
+/*nav bar roll over effects*/
+/*drop hover applies when any link in images list is hovered over*/
+a:hover, .drop:hover{
+    background-color: rgb(228, 159, 0);
+    color: rgb(49, 49, 49);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7); /*offset x, offset y, blur radius, spread radius*/
+    transition: background-color 0.3s ease-in;
+}
+
+/*hides and styles anchor links within images link div tag*/
+.rollover-menu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /*offset x, offset y, blur radius, spread radius*/
+}
+
+/*displays anchor elements when user hovers pointer over images link*/
+.drop:hover .rollover-menu{
+    display: block;
+
+}
+
