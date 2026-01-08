@@ -233,3 +233,13 @@ img {
         background-color: rgb(224, 224, 224);
     }
 }
+
+/*image4 rotation div element*/
+.rotate{
+    transition: 1.5s ease;
+}
+
+/*animation for the rotation on the pointer hover*/
+.rotate:hover{
+    transform: rotate(-360deg);
+}
