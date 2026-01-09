@@ -18,13 +18,13 @@
             <li>
                 <a href="#recipes">Recipes</a>
                 <div>
-                    <a>Featured Recipe</a>
-                    <a>Pasta</a>
-                    <a>Chicken</a>
-                    <a>Pork</a>
-                    <a>Biscuits</a>
-                    <a>Fish</a>
-                    <a>Dessert</a>
+                    <a href="#featured">Featured Recipe</a>
+                    <a href="#pasta">Pasta</a>
+                    <a href="#chicken">Chicken</a>
+                    <a href="#pork">Pork</a>
+                    <a href="#biscuits">Biscuits</a>
+                    <a href="#fish">Fish</a>
+                    <a href="#dessert">Dessert</a>
                 </div>
             </li>
             <li><a href="#contact">Contact</a></li>
@@ -37,7 +37,7 @@
     <!--recipes-->
     <section>
         <!--featured recipe-->
-        <div>
+        <div id="featured">
             <h2>Featured Recipe</h2>
             <div>
                 <img src="images/skillet-pizza.jpeg">
@@ -62,19 +62,113 @@
         <div id="recipes">
             <h2>Recipes</h2>
             <!--pasta-->
-            <div>
+            <div id="pasta">
                 <h3>Saucy Tortellina Parm</h3>
                 <div>
                     <img src="images/tortelloni.jpeg">
                 </div>
                 <div>
-                    <h4>Prep Time:</h4>
+                    <h4>Prep Time: </h4>
                     <p>20-30 minutes</p>
                     <h4>Level: </h4>
                     <p>easy</p>
                     <input type="button" value="Recipe">
                 </div>
             </div>
+            <!--chicken-->
+            <div id="chicken">
+                <h3>Mediterranean Chicken Thighs</h3>
+                <div>
+                    <img src="images/chicken-thighs.jpeg">
+                </div>
+                <div>
+                    <h4>Prep Time: </h4>
+                    <p>20-30 minutes</p>
+                    <h4>Level: </h4>
+                    <p>easy</p>
+                    <input type="button" value="Recipe">
+                </div>
+            </div>
+            <!--pork-->
+            <div id="pork">
+                <h3>Crispy Pork Katsu & Rice</h3>
+                <div>
+                    <img src="images/pork-katsu.jpeg">
+                </div>
+                <div>
+                    <h4>Prep Time: </h4>
+                    <p>20-30 minutes</p>
+                    <h4>Level: </h4>
+                    <p>medium</p>
+                    <input type="button" value="Recipe">
+                </div>
+            </div>
+            <!--biscuits-->
+            <div id="biscuits">
+                <h3>Cheddar Cheese Biscuits</h3>
+                <div>
+                    <img src="images/cheddar-biscuits.jpeg">
+                </div>
+                <div>
+                    <h4>Prep Time: </h4>
+                    <p>40-50 minutes</p>
+                    <h4>Level: </h4>
+                    <p>medium</p>
+                    <input type="button" value="Recipe">
+                </div>
+            </div>
+            <!--fish-->
+            <div id="fish">
+                <h3>Baked Cod & Scalloped Potatoes</h3>
+                <div>
+                    <img src="images/baked-cod.jpeg">
+                </div>
+                <div>
+                    <h4>Prep Time: </h4>
+                    <p>30-40 minutes</p>
+                    <h4>Level: </h4>
+                    <p>easy</p>
+                    <input type="button" value="Recipe">
+                </div>
+            </div>
+            <!--dessert-->
+            <div id="dessert">
+                <h3>S'mores Cake</h3>
+                <div>
+                    <img src="images/smores.jpeg">
+                </div>
+                <div>
+                    <h4>Prep Time: </h4>
+                    <p>50-60 minutes</p>
+                    <h4>Level: </h4>
+                    <p>medium</p>
+                    <input type="button" value="Recipe">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact form-->
+    <section>
+        <div id="contact">
+            <h2>Contact Us</h2>
+            <h3>Want more information about our recipies?
+                <br>
+                Contact us below!
+            </h3>
+            <form>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <br>
+                <input type="email" placeholder="Email Address">
+                <input type="tel" placeholder="Phone Number">
+                <br>
+                <input type="checkbox" id="subscription">
+                <label for="subscription">Subscribe for weekly recipes!</label>
+                <br>
+                <textarea placeholder="Type message here..."></textarea>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </section>
 </body>
