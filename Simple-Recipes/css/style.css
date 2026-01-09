@@ -1,0 +1,49 @@
+/*import link for josephin slab font from google font*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html {
+    overflow-x: hidden;
+    /*prevents browswer from displaying left right scroll bar from the negative margin values*/
+}
+
+/*navbar*/
+.nav-bar {
+    position: sticky;
+    /*creates a sticky element that stays in the same screen location*/
+    top: 0;
+    /*sets the element at the top of the page in the browser*/
+    z-index: 9;
+    /*sets stack layer of element to the front/ top*/
+}
+
+ul {
+    display: flex;
+    /*creates a flex container that allows elements to expand or compress to fill the available horizontal space*/
+    list-style-type: none;
+    /*removes default styling for ul elements*/
+    align-items: center;
+    margin: -8px -8px 0px -8px;
+    /*margin order = top right bottom left. negative values stretch beyond the browswer*/
+    background-color: rgb(1, 128, 106);
+    border-bottom: 5px solid rgb(247, 177, 188);
+}
+
+a {
+    font-family: "Josefin Slab", serif;
+    font-size: 25px;
+    font-weight: 800;
+    color:rgb(247, 177, 188);
+    text-align: center;
+    width: 100px;
+    padding: 20px;
+    text-decoration: none;
+    transition: background-color 0.4s ease-in;
+}
+
+a:hover{
+    background-color: rgb(149, 238, 223);
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.4s ease-in;
+}
