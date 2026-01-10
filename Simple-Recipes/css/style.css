@@ -1,6 +1,8 @@
 /*import link for josephin slab font from google font*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*import link for sacremento font from google font*/
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
 html {
     overflow-x: hidden;
@@ -109,4 +111,72 @@ td p {
     font-weight: 600;
     text-align: center;
     color: rgb(247, 177, 188);
+}
+
+/*body*/
+.container {
+    display: inline-block;
+    background-size: 100%;
+    padding-top: 60px;
+    padding-left: 30px;
+}
+
+/*header*/
+h1 {
+    font-family: "Sacramento", cursive;
+    font-size: 80px;
+    color: rgb(0, 80, 67);
+    text-align: center;
+}
+
+h2,
+h3,
+h4 {
+    font-family: "Josefin Slab", serif;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(0, 80, 67);
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: rgb(247, 177, 188);
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 15px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+/*paragraphs*/
+
+p {
+    font-family: "Josefin Slab", serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 80, 67);
+    text-align: center;
+}
+
+/*images*/
+
+/*positions elements to sit next to one another on screen*/
+.column {
+    float: left;
+    width: 48%;
+    padding: 10px;
+}
+
+/*styles first 7 img tag elements in the column class*/
+
+.column img:nth-child(-n + 7){
+    width: 500px;
+    height: 350px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4),
+    0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
