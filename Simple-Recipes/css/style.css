@@ -172,11 +172,47 @@ p {
     padding: 10px;
 }
 
+/*styling for screens <=1200px */
+@media screen and (max-width: 1200px) {
+    .column {
+        width: 100%;
+        padding: 0px;
+        margin-left: -15px;
+        /*centers each column on the screen*/
+
+    }
+}
+
 /*styles first 7 img tag elements in the column class*/
 
-.column img:nth-child(-n + 7){
+.column img:nth-child(-n + 7) {
     width: 500px;
     height: 350px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4),
-    0 6px 20px 0 rgba(0, 0, 0, 0.2);
+        0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.recipe-container {
+    width: 500px;
+    height: 350px;
+    margin: 100px auto 180px;
+    /*top, right and left, bottom*/
+}
+
+/*styling for mobile screens*/
+@media screen and (max-width: 600px) {
+    .column img:nth-child(-n + 7) {
+        width: 350px;
+        height: 225px;
+    }
+
+    .recipe-container {
+        width: 350;
+        height: 225;
+    }
+}
+
+.recipe-card-background{
+    background-color: rgb(149, 238, 223);
+    
 }
