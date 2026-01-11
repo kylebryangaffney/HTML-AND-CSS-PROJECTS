@@ -299,3 +299,27 @@ p {
 #featured-button:hover{
     background-color: rgb(247, 177, 188);
 }
+
+/*image flip*/
+
+/*positions flip effect defines transition time and 3d effect*/
+.flip{
+    position: relative;
+    /*allows the effect to take up all of the width and height*/
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    transform-style: preserve-3d; /*treats objects as 3d not flat 2d objects*/
+}
+
+.flip:hover{
+    transform: rotateY(180deg); /*rotaes element clockwise*/
+}
+
+.flip-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
