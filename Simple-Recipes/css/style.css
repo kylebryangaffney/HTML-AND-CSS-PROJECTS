@@ -212,7 +212,90 @@ p {
     }
 }
 
-.recipe-card-background{
+.recipe-card-background {
     background-color: rgb(149, 238, 223);
-    
+}
+
+
+/*alternates tile background color on smaller screens*/
+@media screen and (max-width: 1200px) {
+    #pork {
+        background-color: rbg(255, 255, 255);
+    }
+
+    #biscuits {
+        background-color: rgb(149, 238, 223);
+    }
+
+}
+
+/*featured recipe*/
+/*styles featured recipe h3 tag*/
+#featured-header {
+    font-family: "Sacramento", cursive;
+    /*font from google fonts*/
+    font-size: 60px;
+    color: rgb(0, 80, 67);
+}
+
+#featured-main-text {
+    text-align: justify;
+    padding-top: 20px;
+    margin-left: 40px;
+}
+
+/*sets margin left to zero for small screens to center text alignment*/
+@media screen and (max-width: 1200px) {
+    #featured-main-text {
+        margin-left: 0px;
+    }
+}
+
+/*styles the featured img element only*/
+@media screen and (min-width: 1600px) {
+    #featured img {
+        width: 700px;
+        height: auto;
+        /*calculates height based on width*/
+        margin-left: -100px;
+        margin-top: -20px;
+        /*margin left and top override .recipe-container selector */
+    }
+}
+
+/*adjusts the featured img position to center on screens less than 1600px*/
+@media screen and (max-width: 1599px) {
+    #featured img {
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #featured .recipe-card-background {
+        height: 300px;
+    }
+
+    #featured img {
+        margin-top: -65px;
+    }
+}
+
+#featured-button{
+    display: block;/*positions recipe button on a separate line from other elements in the div*/
+    margin: 60px auto 0px;
+    background-color: rgb(1, 128, 106);
+    border-radius: 35px;
+    border: none; /*removes default border set by browser when border radius is used*/
+    font-family: "Josefin Slab", serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px 25px; /*top bottom and left right values*/
+    color: white;
+    cursor: pointer;
+}
+
+/*styles hover effect of recipe button on the featured recipe sectoin*/
+#featured-button:hover{
+    background-color: rgb(247, 177, 188);
 }
