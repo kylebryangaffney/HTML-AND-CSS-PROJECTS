@@ -73,7 +73,7 @@ a:hover,
 }
 
 .rollover-menu a {
-    color: rbg(0, 80, 67);
+    color: rgb(0, 80, 67);
 }
 
 .rollover-menu a:hover {
@@ -350,6 +350,14 @@ p {
     }
 }
 
+
+/*clears floated elements in recipes section to allow for desired scrolling effect*/
+#recipes::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /*recipe buttons*/
 input[type="button"] {
     background-color: #fff;
@@ -459,6 +467,11 @@ input[type="submit"]:hover {
 
 
 /*about section*/
+/*adds spacing above the about section to avoid being buried under other elements*/
+#about{
+    padding-top: 30px;
+}
+
 #about-text {
     margin: auto;
     width: 50%;
