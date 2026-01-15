@@ -1,0 +1,143 @@
+/*import link for josephin slab font from google font*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+html {
+    overflow-x: hidden;
+    /*prevents browswer from displaying left right scroll bar from the negative margin values*/
+    scroll-behavior: smooth;
+    /*creates a smooth scrolling effect when jumping to links*/
+}
+
+/*styling for body elements*/
+body {
+    font-family: "Josefin Slab", serif;
+    font-size: 1rem;
+    font-weight: 800;
+    background-color: #14102B;
+    color: #F8FAFC;
+    display: block;
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
+}
+
+
+/*navbar*/
+.nav-bar {
+    position: sticky;
+    /*creates a sticky element that stays in the same screen location*/
+    top: 0;
+    /*sets the element at the top of the page in the browser*/
+    z-index: 9;
+    /*sets stack layer of element to the front/ top*/
+    background: #0F0B22;
+    border-bottom: 1px solid #2B2353;
+}
+
+.nav-bar ul {
+    display: flex;
+    /*creates a flex container that allows elements to expand or compress to fill the available horizontal space*/
+    list-style-type: none;
+    /*removes default styling for ul elements*/
+    align-items: center;
+    margin: -8px -8px 0px -8px;
+    /*margin order = top right bottom left. negative values stretch beyond the browswer*/
+}
+
+h1, h2, h3{
+    color: #ffd5e465;
+    font-weight: 1000;
+
+}
+
+/*sets styling for the input section of the contact form*/
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    font-family: 'Courier New', Courier, monospace;
+    width: 13rem;
+    margin: 10px 15px 10px 0px;
+    border: 2px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+/*sets the input area for the message input*/
+textarea {
+    width: 50%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: both;
+    /*allows user to resize the width and height of text feild for input*/
+    border: 2px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    font-size: 15px;
+    color: rgb(165, 165, 165);
+}
+
+/*update*/
+textarea:focus {
+    color: black;
+    border: 3px solid #14102B;
+    outline: none;
+}
+
+
+/*positions elements to sit next to one another on screen for the saxohone type section*/
+.column {
+    float: left;
+    width: 43%;
+    padding: 10px;
+}
+
+#video .column {
+    width: 42%;
+    float: center;
+}
+
+/*sets the sizing for the facts picture*/
+#brecker-picture img{
+    height: 20rem;
+    width: auto;
+    display: block;
+}
+
+/*sets a box around the saxophone blocks with imgs*/
+.column {
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #F8FAFC;
+    margin: 15px;
+}
+
+/*styles the saxophone images in the types section*/
+.column img {
+    height: 20rem;
+    /* preserves aspect ratio against a reduced width*/
+    width: auto;
+
+    display: block;
+}
+
+/*sets the dimentions for the img in the contact section*/
+#contact img {
+    width: 300px;
+    height: auto;
+    display: block;
+}
+
+/*sets the width of the li elements for the saxophone facts*/
+#facts li {
+    width: 350px;
+}
+
+.column::after{
+    content: "";
+    display: table;
+    clear: both;
+}

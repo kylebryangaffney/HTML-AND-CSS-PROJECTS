@@ -49,7 +49,6 @@ a {
 
 a:hover,
 .drop:hover a:only-of-type
-
 /*only of type affects the only child elements within an element. this keeps the background blue while hovering and the text white when the pointer moves to the anchor elements in the rollover-menu div */
     {
     background-color: rgb(149, 238, 223);
@@ -306,7 +305,6 @@ p {
 }
 
 /*image flip*/
-
 /*positions flip effect defines transition time and 3d effect*/
 .flip {
     position: relative;
