@@ -13,15 +13,12 @@
 <body>
     <!--nav bar-->
     <nav class="nav-bar">
-        <a href="index.html">Home</a>
         <ul>
-            <li><a href="#facts">Saxophone Facts</a></li>
-            <li><a href="#soprano">Soprano Saxophone</a></li>
-            <li><a href="#alto">Alto Saxophone</a></li>
-            <li><a href="#tenor">Tenor Saxophone</a></li>
-            <li><a href="#baritone">Baritone Saxophone</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#facts">Facts</a></li>
+            <li><a href="#types">Types</a></li>
             <li><a href="#video">Videos</a></li>
-            <li><a href="#contact">Contact The Saxophone Website</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
 
     </nav>
@@ -33,15 +30,15 @@
         </div>
         <div id="brecker-picture">
             <img src="https://thejazzdive.com/cdn/shop/files/Brecker.png?v=1712164991&width=5000"
-                alt="Art from The Jazz Dive">
+                alt="Art from The Jazz Dive of Michael Brecker">
         </div>
     </header>
 
     <!--saxophone facts-->
-    <section id="facts">
-        <div>
+    <section>
+        <div id="facts">
             <h2>Facts about the Saxophone</h2>
-            <ol>
+            <ul>
                 <li>It uses a reed to produce sound.
                     This makes it a woodwind, not a brass instrument, even though it’s made of brass or sometimes
                     bronze.
@@ -58,13 +55,13 @@
                     The body tube of a saxophone gradually widens, which can help players achieve a more even tone
                     across registers, but requires more practice to do so.
                 </li>
-            </ol>
+            </ul>
         </div>
     </section>
 
     <!--saxophone images-->
     <section>
-        <div>
+        <div id="types">
             <h2>Saxophone Types</h2>
             <div>
                 <!--soprano image-->
@@ -107,31 +104,35 @@
         </div>
     </section>
     <!--contact section-->
-    <section id="contact">
-        <div>
-            <h2>Please reach out to The Saxophone Website</h2>
-        </div>
-        <div>
-            <img src="https://i.discogs.com/5mBiHiXHaFW2giTxMNzqvxrrYJuTQYD7zKskf0-Bkg4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyMjMy/MzgtMTQ4NjA0Nzc2/Ny05Njg4LmpwZWc.jpeg"
-                alt="Art from Reiner Regels Airmail – Gettin Airmail">
-        </div>
-        <div>
-            <h3>Please provide contact information with your message.</h3>
+    <section>
+        <div id="contact">
             <div>
-                <form>
-                    <input type="text" placeholder="First Name">
-                    <input type="text" placeholder="Last Name">
-                    <br>
-                    <input type="email" placeholder="Email">
-                    <input type="tel" placeholder="Phone Number">
-                    <br>
-                    <input type="checkbox" id="MalingList">
-                    <label id="MailingList">Join Mailing List?</label>
-                    <br>
-                    <textarea placeholder="Type message here"></textarea>
-                    <br>
-                    <input type="submit" value="Submit">
-                </form>
+                <h2>Please reach out to The Saxophone Website</h2>
+            </div>
+            <div class="container">
+                <div>
+                    <img src="https://i.discogs.com/5mBiHiXHaFW2giTxMNzqvxrrYJuTQYD7zKskf0-Bkg4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyMjMy/MzgtMTQ4NjA0Nzc2/Ny05Njg4LmpwZWc.jpeg"
+                        alt="Art from Reiner Regels Airmail – Gettin Airmail">
+                </div>
+                <div>
+                    <h3>Please provide contact information with your message.</h3>
+                    <div>
+                        <form>
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Last Name">
+                            <br>
+                            <input type="email" placeholder="Email">
+                            <input type="tel" placeholder="Phone Number">
+                            <br>
+                            <input type="checkbox" id="MalingList">
+                            <label id="MailingList">Join Mailing List?</label>
+                            <br>
+                            <textarea placeholder="Type message here"></textarea>
+                            <br>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -149,9 +150,6 @@
                 </td>
                 <td>
                     <p>(999) 867-5309</p>
-                </td>
-                <td>
-                    <a href="#contact">Contact The Saxophone Website</a>
                 </td>
             </tr>
         </table>

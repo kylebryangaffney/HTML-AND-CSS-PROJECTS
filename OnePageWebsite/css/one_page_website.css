@@ -10,6 +10,21 @@ html {
     /*creates a smooth scrolling effect when jumping to links*/
 }
 
+
+/*center the h1 and h2 elements on the page */
+h1,
+h2 {
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    color: #d3cbcb;
+    font-weight: 1000;
+}
+
+
 /*styling for body elements*/
 body {
     font-family: "Josefin Slab", serif;
@@ -33,8 +48,7 @@ body {
     /*sets the element at the top of the page in the browser*/
     z-index: 9;
     /*sets stack layer of element to the front/ top*/
-    background: #0F0B22;
-    border-bottom: 1px solid #2B2353;
+    border-bottom: 1px solid #dccad165;
 }
 
 .nav-bar ul {
@@ -45,65 +59,62 @@ body {
     align-items: center;
     margin: -8px -8px 0px -8px;
     /*margin order = top right bottom left. negative values stretch beyond the browswer*/
+    padding: 18px 0;
+    background-color: #2B2353;
+    justify-content: center;
 }
 
-h1, h2, h3{
-    color: #ffd5e465;
-    font-weight: 1000;
-
+.nav-bar li {
+    margin: 0 20px;
 }
 
-/*sets styling for the input section of the contact form*/
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
-    font-family: 'Courier New', Courier, monospace;
-    width: 13rem;
-    margin: 10px 15px 10px 0px;
-    border: 2px solid rgb(165, 165, 165);
-    border-radius: 5px;
-    padding: 3px;
-}
-
-/*sets the input area for the message input*/
-textarea {
-    width: 50%;
-    height: 200px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    resize: both;
-    /*allows user to resize the width and height of text feild for input*/
-    border: 2px solid rgb(165, 165, 165);
-    border-radius: 5px;
-    font-size: 15px;
-    color: rgb(165, 165, 165);
-}
-
-/*update*/
-textarea:focus {
-    color: black;
-    border: 3px solid #14102B;
-    outline: none;
+.nav-bar a {
+    color: white;
+    font-size: medium;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
 }
 
 
+a:hover,
+a:only-of-type
+
+/*only of type affects the only child elements within an element.*/
+    {
+    background-color: #2B2353;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+/*saxophone facts section*/
+/*sets the sizing for the facts picture*/
+#brecker-picture img {
+    height: 20rem;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/*sets the width of the li elements for the saxophone facts*/
+#facts li {
+    width: 350px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#facts ul {
+    padding-left: 0;
+}
+
+/*types section*/
 /*positions elements to sit next to one another on screen for the saxohone type section*/
 .column {
     float: left;
     width: 43%;
     padding: 10px;
-}
-
-#video .column {
-    width: 42%;
-    float: center;
-}
-
-/*sets the sizing for the facts picture*/
-#brecker-picture img{
-    height: 20rem;
-    width: auto;
-    display: block;
 }
 
 /*sets a box around the saxophone blocks with imgs*/
@@ -120,24 +131,118 @@ textarea:focus {
     height: 20rem;
     /* preserves aspect ratio against a reduced width*/
     width: auto;
-
     display: block;
 }
 
-/*sets the dimentions for the img in the contact section*/
-#contact img {
-    width: 300px;
+/*sets surrounding space around the types section*/
+#types {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*video section*/
+/*sets the sizing for the videos section so that they each sit next to one another*/
+#video .column {
+    width: 42%;
+    float: center;
+}
+
+/*sets the size of the videos themselves in the video section*/
+#video iframe {
+    width: 100%;
     height: auto;
     display: block;
 }
 
-/*sets the width of the li elements for the saxophone facts*/
-#facts li {
-    width: 350px;
+
+/*clears saxophone types floating elements */
+#video {
+    clear: both;
 }
 
-.column::after{
-    content: "";
-    display: table;
+/*contact section*/
+/*sets container for the contact section to have the picture left of the contact form*/
+.container {
+    display: flex;
+}
+
+.container div {
+    margin: 10px;
+    padding: 20px;
+}
+
+/*sets styling for the input section of the contact form*/
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    font-family: 'Courier New', Courier, monospace;
+    width: 13rem;
+    margin: 10px 15px 10px 0px;
+    border: 2px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+/*sets the input area for the message input*/
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: both;
+    /*allows user to resize the width and height of text feild for input*/
+    border: 2px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    font-size: 15px;
+    color: rgb(165, 165, 165);
+}
+
+/*changes the focus highlight of the message input field*/
+textarea:focus {
+    color: black;
+    border: 3px solid #14102B;
+    outline: none;
+}
+
+
+/*clears the floating elements from the videos to push the contact h2 onto its own line*/
+#contact {
     clear: both;
+}
+
+/*sets the dimentions for the img in the contact section*/
+#contact img {
+    height: 300px;
+    width: auto;
+    display: block;
+}
+
+
+/*footer*/
+footer {
+    align-items: center;
+    /*centers nested html elements like the table data and paragraph elements */
+    margin: 0px -8px -8px -8px;
+    /* stretches the footer background beyond the browswers edge*/
+    bottom: 0;
+    /*positions footer at bottom of screen*/
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    width: 33%;
+}
+
+td p {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+td a {
+    color: white;
+    text-decoration: none;
 }
