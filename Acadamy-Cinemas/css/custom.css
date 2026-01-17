@@ -1,5 +1,84 @@
-body{
+/*font passion one from google font*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+/*creates global css variables that can be reused throughout the custom.css file*/
+
+:root {
+    --main-color: rgb(126, 133, 130);
+    --main-color-accent: rgb(237, 192, 3);
+    --main-color-transparent: rgba(126, 133, 130, 0.8);
+    --secondary-color: rgba(128, 0, 0, 0.9);
+    --accent-color: rgb(36, 36, 36);
+    --accent-text-color: rgb(255, 255, 255);
+    --main-font-family: "Passion One", sans-serif;
+}
+
+body {
     background-image: url(../images/theater-curtains.jpg);
     background-size: 100%;
 }
 
+/*navbar*/
+.navbar {
+    background-color: var(--secondary-color);
+    border-bottom: 5px solid rgb(98, 0, 0);
+    height: 100px;
+}
+
+/*sets the title in the navbar acadamy cinemas*/
+.navbar-brand {
+    color: var(--main-color-accent);
+    font-family: var(--main-font-family);
+    font-size: 45px;
+    padding-left: 30px;
+}
+
+.nav-link {
+    color: var(--main-color-accent);
+    font-family: var(--main-font-family);
+    font-size: 35px;
+}
+
+/*sets the hover state of the links in the nav bar*/
+.nav-link:hover {
+    color: var(--main-color-transparent);
+    text-shadow: 0 0 3px rgba(255, 123, 0, 0.6);
+}
+
+/*sets active link color*/
+.nav-link:focus{
+    color: var(--accent-text-color);
+    text-shadow: 0 0 3px rgba(255, 123, 0, 0.6);
+}
+
+/*adjusts left padding of the navbar links*/
+.navbar-expand-lg{
+    padding-left: 1.5rem;
+}
+
+/*movie dropdown menue*/
+
+/*styles the dropdown mentue for the movies title links*/
+.dropdown-menu{
+    border: none;
+    border-radius: 0;
+    box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.4);
+    background-color: var(--main-color);
+    padding: 0px; /*overrides bootstrap default padding of top and bottom of dropdown menue*/
+}
+
+/*sets the styling for movie links in dropdown menue*/
+.dropdown-item{
+    color: var(--accent-color);
+    font-family: var(--main-font-family);
+    text-align: center;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(117, 77, 13);
+}
+
+.dropdown-item:hover, .dropdown-item:focus{
+    color: var(--accent-text-color);
+    background-color: var(--main-color);
+}
