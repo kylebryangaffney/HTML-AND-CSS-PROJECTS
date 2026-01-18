@@ -58,7 +58,7 @@ body {
 
 /*movie dropdown menue*/
 
-/*styles the dropdown mentue for the movies title links*/
+/*styles the dropdown menu for the movies title links*/
 .dropdown-menu{
     border: none;
     border-radius: 0;
@@ -67,7 +67,7 @@ body {
     padding: 0px; /*overrides bootstrap default padding of top and bottom of dropdown menue*/
 }
 
-/*sets the styling for movie links in dropdown menue*/
+/*sets the styling for movie links in dropdown menu*/
 .dropdown-item{
     color: var(--accent-color);
     font-family: var(--main-font-family);
@@ -81,4 +81,19 @@ body {
 .dropdown-item:hover, .dropdown-item:focus{
     color: var(--accent-text-color);
     background-color: var(--main-color);
+}
+
+/*mobile menu*/
+.navbar-toggler{
+    border:none;
+    transition: 0.5s ease;
+}
+
+.navbar-toggler:focus{
+    box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) rgb(98, 0, 0);
+    transition: 0.5s ease;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28237, 192, 3%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
