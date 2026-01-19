@@ -21,7 +21,8 @@ html{
 
 body {
     background-image: url(../images/theater-curtains.jpg);
-    background-size: 100%;
+    background-size: 100% 120%; /*100% horizontally and 120% vertically*/
+    background-attachment: fixed;
 }
 
 /*navbar*/
@@ -109,12 +110,25 @@ body {
     padding-top: 150px;
 }
 
+h1, h3, p{
+    cursor: default;/*sets the pointer to always be the arrow instead of the text cursor even when hovering over text*/
+}
+
 h1{
     font-family: var(--main-font-family);
     color: var(--main-color-accent);
     text-shadow: 0 0 10px rgb(0, 0, 0);
     text-align: center;
     font-size: 100px;
+}
+
+h3{
+    font-family: var(--main-font-family);
+    font-size: 50px;
+}
+
+b{
+    font-weight: 600;
 }
 
 /*movie cards*/

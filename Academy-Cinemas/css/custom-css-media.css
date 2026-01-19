@@ -3,6 +3,10 @@
         /*calc(min size + (max size - min size) * ((viewport width % - min viewport width) / (max viewport widht - min viewport width)))*/
         font-size: calc(50px + (100 - 50) * ((100vw - 320px) / (1920 - 320)));
     }
+
+    .lead{
+        font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+    }
 }
 
 @media screen and (max-width: 990px) {

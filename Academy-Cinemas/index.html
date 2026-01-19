@@ -16,7 +16,7 @@
 
 <body>
     <!--nav bar-->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Academy Cinemas</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -56,10 +56,23 @@
         <div class="container">
             <h1>Now Playing</h1>
             <!--ben hur-->
-            <div class="d-flex flex-row" id="ben-hur">
-                <div class="col-lg-5">
+            <div class="d-flex flex-row flex-wrap" id="ben-hur">
+                <div class="col-lg-5 mx-auto">
                     <img src="images/ben-hur.jpg" class="img-fluid" alt="Ben Hur Poster">
-
+                </div>
+                <div class="card col-lg-5 mx-auto">
+                    <div class="card-body">
+                        <h3 class="card-title">Ben Hur</h3>
+                        <!--ben hur movie description-->
+                        <p class="card-text lead">After a Jewish prince is betrayed and sent into slavery by a Roman friend
+                            in 1st-century Jerusalem, he regains his freedom and comes back for revenge.
+                            <br>
+                            <br>
+                            <b>Director: </b>William Wyler
+                            <br>
+                            <b>Starring: </b>Charlton Heston | Jack Hawkins | Stephen Boyd
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
