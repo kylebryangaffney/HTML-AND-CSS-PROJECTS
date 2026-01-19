@@ -1,9 +1,11 @@
 /*font passion one from google font*/
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
+/*font yesteryear from google font*/
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
 /*creates global css variables that can be reused throughout the custom.css file*/
 
-html{
+html {
     /*eliminates the left right scroll caused by the extra x padding*/
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -17,11 +19,13 @@ html{
     --accent-color: rgb(36, 36, 36);
     --accent-text-color: rgb(255, 255, 255);
     --main-font-family: "Passion One", sans-serif;
+    --secondary-font-family: "Yesteryear", cursive;
 }
 
 body {
     background-image: url(../images/theater-curtains.jpg);
-    background-size: 100% 120%; /*100% horizontally and 120% vertically*/
+    background-size: 100% 120%;
+    /*100% horizontally and 120% vertically*/
     background-attachment: fixed;
 }
 
@@ -53,29 +57,30 @@ body {
 }
 
 /*sets active link color*/
-.nav-link:focus{
+.nav-link:focus {
     color: var(--accent-text-color);
     text-shadow: 0 0 3px rgba(255, 123, 0, 0.6);
 }
 
 /*adjusts left padding of the navbar links*/
-.navbar-expand-lg{
+.navbar-expand-lg {
     padding-left: 1.5rem;
 }
 
 /*movie dropdown menue*/
 
 /*styles the dropdown menu for the movies title links*/
-.dropdown-menu{
+.dropdown-menu {
     border: none;
     border-radius: 0;
     box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.4);
     background-color: var(--main-color);
-    padding: 0px; /*overrides bootstrap default padding of top and bottom of dropdown menue*/
+    padding: 0px;
+    /*overrides bootstrap default padding of top and bottom of dropdown menue*/
 }
 
 /*sets the styling for movie links in dropdown menu*/
-.dropdown-item{
+.dropdown-item {
     color: var(--accent-color);
     font-family: var(--main-font-family);
     text-align: center;
@@ -85,36 +90,41 @@ body {
     border-bottom: 2px solid rgb(117, 77, 13);
 }
 
-.dropdown-item:hover, .dropdown-item:focus{
+.dropdown-item:hover,
+.dropdown-item:focus {
     color: var(--accent-text-color);
     background-color: var(--main-color);
 }
 
 /*mobile menu*/
-.navbar-toggler{
-    border:none;
+.navbar-toggler {
+    border: none;
     transition: 0.5s ease;
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
     box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) rgb(98, 0, 0);
     transition: 0.5s ease;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28237, 192, 3%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 /*header image*/
-#header-image{
+#header-image {
     padding-top: 150px;
 }
 
-h1, h3, p{
-    cursor: default;/*sets the pointer to always be the arrow instead of the text cursor even when hovering over text*/
+h1,
+h3,
+h4,
+p {
+    cursor: default;
+    /*sets the pointer to always be the arrow instead of the text cursor even when hovering over text*/
 }
 
-h1{
+h1 {
     font-family: var(--main-font-family);
     color: var(--main-color-accent);
     text-shadow: 0 0 10px rgb(0, 0, 0);
@@ -122,16 +132,49 @@ h1{
     font-size: 100px;
 }
 
-h3{
+h3 {
     font-family: var(--main-font-family);
     font-size: 50px;
 }
 
-b{
+h4 {
+    font-family: var(--secondary-font-family);
+    font-size: 25px;
+}
+
+b {
     font-weight: 600;
 }
 
 /*movie cards*/
-.container{
+.container {
     padding: 100px;
+}
+
+/*buttons*/
+/*sets main styling for buttons that have the bootstrap .btn class*/
+.btn {
+    background-color: var(--main-color);
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    color: var(--accent-color);
+    font-family: var(--main-font-family);
+    font-size: 18px;
+}
+
+.btn:focus {
+    border-color: transparent;
+    /*sets the default bootstrap border color to null when user clicks button*/
+    background-color: var(--main-color);
+    color: var(--accent-text-color);
+}
+
+.btn:hover {
+    border-color: transparent;
+    /*sets the default bootstrap border color to null when user clicks button*/
+    background-color: var(--main-color);
+    color: var(--accent-text-color);
+
 }
