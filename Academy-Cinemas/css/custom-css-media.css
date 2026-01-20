@@ -4,11 +4,12 @@
         font-size: calc(50px + (100 - 50) * ((100vw - 320px) / (1920 - 320)));
     }
 
-    h4{
+    h4 {
         font-size: calc(25px + (35 - 25) * ((100vw - 320px) / (1920 - 320)));
     }
 
-    .lead, .btn{
+    .lead,
+    .btn {
         font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
     }
 }
@@ -36,16 +37,16 @@
     }
 }
 
-@media screen and (max-width: 1200px){
-    html{
+@media screen and (max-width: 1200px) {
+    html {
         scroll-padding-top: 300px;
     }
 
-    img{
+    img {
         margin-bottom: 30px;
     }
 
-    .container{
+    .container {
         padding: 50px;
     }
 }
