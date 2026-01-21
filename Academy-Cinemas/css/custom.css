@@ -279,3 +279,22 @@ input[type="number"]:focus{
 #contact-submit{
     float: right;
 }
+
+/*footer*/
+footer{
+    border-top: 5px solid var(--main-color);
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0px -15px 0px -15px; /*extends the footer beyond the left and right edges*/
+}
+
+.footer-text{
+    font-family: var(--main-font-family);
+    color: var(--accent-text-color);
+    font-size: 30px;
+}
+
+/*styles the footer image differently from the other img elements */
+.footer-img{
+    width: auto;
+    height: 130px;
+}
