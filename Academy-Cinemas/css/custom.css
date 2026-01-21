@@ -261,3 +261,21 @@ input[type="number"]:focus{
     outline: 0; /*removes browser default outline*/
 }
 
+/*contact form*/
+
+.form-control{
+    border: 3px solid var(--main-color);
+    transition: 1s ease;
+}
+
+/*overrides bootstrap focus effect*/
+.form-control:focus{
+    color: #212529;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0px .25rem var(--main-color);
+}
+
+/*moves the contact form submit button to the right side of screen*/
+#contact-submit{
+    float: right;
+}
