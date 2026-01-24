@@ -1,0 +1,280 @@
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: honeydew;
+}
+
+
+/*sets the center class for img elements*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
+/*filters the colors of the img elements and inverts them*/
+.inverted-color {
+    filter: invert(75%);
+}
+
+/*sets the rounded corners for the img-rounded class elements*/
+.img-rounded {
+    border-radius: 35px;
+}
+
+
+/*footer*/
+footer {
+    text-align: center;
+    margin: 0px -8px -8px -8px;
+    bottom: 0;
+}
+
+/*sets the padding around the anchor tags in the footer*/
+.footer-anchor {
+    padding: 25px;
+}
+
+/*sets the margins of the table in the footer*/
+table {
+    border: 5px solid black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*styles each td element in the footer table*/
+td {
+    padding: 20px;
+    font-weight: bold;
+}
+
+td:hover {
+    background-color: blueviolet;
+    color: black;
+}
+
+/*styling the top row differently*/
+tr,
+th {
+    background-color: red;
+    color: black;
+}
+
+tr,
+td {
+    background-color: lightgrey;
+    color: black;
+}
+
+
+/*set the text styling for the image with the text over it*/
+/*adding the overlay effect for the image and text*/
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -10px;
+  right: -10px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .75s ease;
+  background-color: red;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*sets the element for the image and text outside of the overlay fade*/
+h3 {
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/*set the size of the img container*/
+.container img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* I had to trial and error the spacing after i shrunk the img down. Is there a better way to do this? */
+.bottom-left {
+    position: absolute;
+    bottom: 20px;
+    left: 140px;
+}
+
+
+/*navbar*/
+.navbar {
+    overflow: hidden;
+    background-color: red;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    margin: -2px -8px 0px -8px;
+    border-right: 4px solid black;
+    border-left: 4px solid black;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: white;
+    color: black;
+}
+
+
+/* main content after nav bar */
+.main {
+    margin-top: 30px;
+    /* Add a top margin to avoid content overlay */
+}
+
+/*about section*/
+.column {
+    float: left;
+    height: 150px;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#about h2 {
+    text-align: center;
+}
+
+#about {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*specifically style the font a slightly different color to meet the requirements of the assignment on step 589*/
+#about p {
+    text-align: left;
+    color: rgb(78, 74, 13)
+}
+
+/*sets a hover effect for the about p elements*/
+#about p:hover {
+    background-color: red;
+    color: white;
+    font-size: 18px;
+}
+
+/*styles the unordered list elements */
+#about ul {
+    list-style-position: inside;
+    padding-left: 0;
+    margin: 0;
+    color: black;
+}
+
+#about ul:hover {
+    background-color: purple;
+    color: white;
+    font-size: 14px;
+}
+
+
+
+/*contact section*/
+/*sets container for the contact section to have the picture left of the contact form*/
+
+#contact h2 {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.container {
+    display: block;
+}
+
+.container div {
+    margin-bottom: 10px;
+}
+
+/*sets styling for the input section of the contact form*/
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    font-family: 'Courier New', Courier, monospace;
+    width: 13rem;
+    margin: 10px 15px 10px 0px;
+    border: 2px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+/*sets the input area for the message input*/
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: both;
+    border: 2px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    font-size: 15px;
+    color: rgb(165, 165, 165);
+}
+
+/*changes the focus highlight of the message input field*/
+textarea:focus {
+    color: black;
+    border: 3px solid #14102B;
+    outline: none;
+}
+
+
+/*clears the floating elements from the videos to push the contact h2 onto its own line*/
+#contact {
+    clear: both;
+}
