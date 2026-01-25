@@ -76,32 +76,32 @@ td {
 /*set the text styling for the image with the text over it*/
 /*adding the overlay effect for the image and text*/
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -10px;
-  right: -10px;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .75s ease;
-  background-color: red;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10px;
+    right: -10px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .75s ease;
+    background-color: red;
 }
 
 .container:hover .overlay {
-  opacity: 1;
+    opacity: 1;
 }
 
 .text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /*sets the element for the image and text outside of the overlay fade*/
@@ -277,4 +277,40 @@ textarea:focus {
 /*clears the floating elements from the videos to push the contact h2 onto its own line*/
 #contact {
     clear: both;
+}
+
+
+/*video section styling to size and frame the picture*/
+
+/*styling the video text overlay*/
+.video-container {
+    position: relative;
+    width: 360px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.video-container video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+
 }
