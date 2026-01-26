@@ -1,0 +1,39 @@
+/*setting fot family styling*/
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #10375c;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f1f1e6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #dca11d;
+    color: white;
+}
+
+/*styling informational tiles on the page*/
+.info-tile{
+    margin: 18px;
+    border: 0px solid black;
+    box-shadow: 4px 5px 10px darkgray;
+}
