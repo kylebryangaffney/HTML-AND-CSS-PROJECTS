@@ -16,13 +16,13 @@ for (let i = 0; i < btnsArray.length; i++) {
         modal = document.querySelector(event.target.getAttribute("href"));
         // Individually sets CSS of that specific modal to make it actually display
         modal.style.display = "block";
-    }
 
-    // When we open a modal, we start a timer, and after the timer expires, we set the display value to null to hide the recipe modal
-    setTimeout(function (){
-        modal.style.display = "none";
+        // MOVED UP into the actual loop-----When we open a modal, we start a timer, and after the timer expires, we set the display value to null to hide the recipe modal
+        setTimeout(function () {
+            modal.style.display = "none";
+        }
+            , 5000);
     }
-    , 5000);
 
 }
 
