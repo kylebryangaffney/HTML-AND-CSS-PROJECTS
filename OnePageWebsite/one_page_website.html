@@ -16,6 +16,7 @@
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#facts">Facts</a></li>
+            <li><a href="#plants">Plants</a></li>
             <li><a href="#types">Types</a></li>
             <li><a href="#video">Videos</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -58,6 +59,81 @@
             </ul>
         </div>
     </section>
+
+    <!--plant images light box-->
+
+    <section>
+        <!-- Images used to open the lightbox -->
+        <div id="plants" class="lightBoxRow">
+            <div class="lightBoxColumn">
+                <img src="images/plant1-small.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="lightBoxColumn">
+                <img src="images/plant2-small.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="lightBoxColumn">
+                <img src="images/plant3-small.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="lightBoxColumn">
+                <img src="images/plant4-small.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="imgModal" class="lightBoxModal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="lightBoxSlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/plant1.png" style="width:100%">
+                </div>
+
+                <div class="lightBoxSlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/plant2.png" style="width:100%">
+                </div>
+
+                <div class="lightBoxSlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/plant3.png" style="width:100%">
+                </div>
+
+                <div class="lightBoxSlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/plant4.png" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="lightBoxColumn">
+                    <img class="thumbnail" src="images/plant1-small.png" onclick="currentSlide(1)" alt="Plant Picture One">
+                </div>
+
+                <div class="lightBoxColumn">
+                    <img class="thumbnail" src="images/plant2-small.png" onclick="currentSlide(2)" alt="Plant Picture Two">
+                </div>
+
+                <div class="lightBoxColumn">
+                    <img class="thumbnail" src="images/plant3-small.png" onclick="currentSlide(3)" alt="Plant Picture Three">
+                </div>
+
+                <div class="lightBoxColumn">
+                    <img class="thumbnail" src="images/plant4-small.png" onclick="currentSlide(4)" alt="Plant Picture Four">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 
     <!--saxophone images-->
     <section>
@@ -154,6 +230,7 @@
             </tr>
         </table>
     </footer>
+    <script src="JS/main.js"></script>
 </body>
 
 </html>
