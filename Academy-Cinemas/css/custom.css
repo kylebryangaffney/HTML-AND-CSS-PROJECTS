@@ -144,7 +144,7 @@ h4 {
     font-size: 25px;
 }
 
-h5{
+h5 {
     font-size: 30px;
     font-family: var(--main-font-family);
 }
@@ -205,7 +205,7 @@ img {
 }
 
 /*sets styling for buy tickets and contact form selection buttons*/
-.yellow-btn{
+.yellow-btn {
     background-color: var(--main-color-accent);
     padding: 20px;
     border-radius: 40px;
@@ -216,7 +216,8 @@ img {
     margin-bottom: 40px;
 }
 
-.yellow-btn:hover, .yellow-btn:focus{
+.yellow-btn:hover,
+.yellow-btn:focus {
     background-color: var(--main-color-accent);
     color: var(--accent-text-color);
 }
@@ -224,28 +225,29 @@ img {
 /*ticket cards*/
 
 /*sets the id "ticket" cards styling */
-#tickets .card{
+#tickets .card {
     padding: 40px;
     height: 250px;
     margin-right: 20px;
     background-color: white;
 }
 
-.form-select{
+.form-select {
     font-family: var(--main-font-family);
     font-size: 20px;
     border: 3px solid var(--main-color);
     transition: border-color 0.5s ease-in;
 }
 
-.form-select:focus{
+.form-select:focus {
     border-color: var(--secondary-color);
-    box-shadow: none; /*overrides bootstrap's boxshadow styling*/
+    box-shadow: none;
+    /*overrides bootstrap's boxshadow styling*/
     transition: 0.5s ease-in;
 }
 
 /*select number of tickets input*/
-input[type="number"]{
+input[type="number"] {
     width: 70px;
     padding: 5px;
     border: 3px solid var(--main-color);
@@ -255,46 +257,70 @@ input[type="number"]{
     transition: border-color 0.5s ease-in;
 }
 
-input[type="number"]:focus{
+input[type="number"]:focus {
     border: 3px solid var(--secondary-color);
     transition: 0.5s ease-in;
-    outline: 0; /*removes browser default outline*/
+    outline: 0;
+    /*removes browser default outline*/
 }
 
 /*contact form*/
 
-.form-control{
+.form-control {
     border: 3px solid var(--main-color);
     transition: 1s ease;
 }
 
 /*overrides bootstrap focus effect*/
-.form-control:focus{
+.form-control:focus {
     color: #212529;
     border-color: var(--secondary-color);
     box-shadow: 0 0 0px .25rem var(--main-color);
 }
 
 /*moves the contact form submit button to the right side of screen*/
-#contact-submit{
+#contact-submit {
     float: right;
 }
 
 /*footer*/
-footer{
+footer {
     border-top: 5px solid var(--main-color);
     background-color: rgba(0, 0, 0, 0.6);
-    margin: 0px -15px 0px -15px; /*extends the footer beyond the left and right edges*/
+    margin: 0px -15px 0px -15px;
+    /*extends the footer beyond the left and right edges*/
 }
 
-.footer-text{
+.footer-text {
     font-family: var(--main-font-family);
     color: var(--accent-text-color);
     font-size: 30px;
 }
 
 /*styles the footer image differently from the other img elements */
-.footer-img{
+.footer-img {
     width: auto;
     height: 130px;
+}
+
+/*popovers*/
+.star-rating {
+    width: 80%;
+}
+
+/*toast*/
+.custom-toast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+/*alert button styling*/
+
+#liveAlertBtn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
