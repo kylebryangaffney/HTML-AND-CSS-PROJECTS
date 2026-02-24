@@ -68,6 +68,17 @@ body {
     padding-left: 1.5rem;
 }
 
+/*navbar shrink on scroll */
+.nav-shrink{
+    height: 80px;
+    transition: 0.5s ease;
+}
+
+/*addding transition to movie dropddown menue after shrink and scroll*/
+.navbar-collapse{
+    transition: margin-top 0.5s ease;
+}
+
 /*movie dropdown menue*/
 
 /*styles the dropdown menu for the movies title links*/

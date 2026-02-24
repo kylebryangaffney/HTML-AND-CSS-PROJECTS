@@ -31,7 +31,7 @@ function displaySelectedMovieOptions() {
     toast.show();
 }
 
-function buyTickets(){
+function buyTickets() {
     displaySelectedMovieOptions();
 }
 
@@ -40,20 +40,53 @@ function buyTickets(){
 
 const alertPlaceholder = document.getElementById('liveAlert')
 const appendAlert = (message, type) => {
-  const wrapper = document.createElement('div')
-  wrapper.innerHTML = [
-    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-    `   <div>${message}</div>`,
-    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-    '</div>'
-  ].join('')
+    const wrapper = document.createElement('div')
+    wrapper.innerHTML = [
+        `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+        `   <div>${message}</div>`,
+        '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+        '</div>'
+    ].join('')
 
-  alertPlaceholder.append(wrapper)
+    alertPlaceholder.append(wrapper)
 }
 
 const alertTrigger = document.getElementById('liveAlertBtn')
 if (alertTrigger) {
-  alertTrigger.addEventListener('click', () => {
-    appendAlert('You clicked the alert button!', 'success')
-  })
+    alertTrigger.addEventListener('click', () => {
+        appendAlert('You clicked the alert button!', 'success')
+    })
 }
+
+
+// jquery
+// Shrink header when user scrolls more than 50px
+$(document).on("scroll", function () {
+    // Check if user scrolled down 50px
+    if ($(document).scrollTop() > 50) {
+        // Add nav-shrink to the navbar
+        $(".navbar").addClass("nav-shrink");
+
+        // Adjust the mobile drop menu to make up for the reduced size of nav bar
+        $("div.navbar-collapse").css("margin-top", "-6px");
+    }
+    // If the user scrolls back to the top
+    else {
+        // Remove the nav-shrink from the navbar
+        $(".navbar").removeClass("nav-shrink");
+
+        // Set the spacing at the top to the default
+        $("div.navbar-collapse").css("margin-top", "14px");
+    }
+});
+
+// Wait until all HTML loads before allowing the user to click on elements
+$(document).ready(function () {
+    // Function listens for clicks inside the nav
+    $(".navbar-nav").on("click", ".nav-link:not('.dropdown-toggle'), .dropdown-item", function () {
+
+        // Target the menu by class and hide the collapse element
+        $(".navbar-collapse").collapse("hide");
+
+    });
+});
