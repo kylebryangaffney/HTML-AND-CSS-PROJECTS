@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Kyle Gaffney Portfolio</title>
+    <title>Kyle Gaffney</title>
+    <link rel="shortcut icon" type="img/jpg" href="images/coding_icon.png">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -14,6 +15,7 @@
         <!--navbar-->
         <div class="Navbar">
             <a class="active" href="#home">Home</a>
+            <a href="#slideshow">Slideshow</a>
             <a href="#about">About</a>
             <a href="#github">GitHub</a>
             <a href="#contact">Contact</a>
@@ -41,9 +43,73 @@
                     <br>
                     <br> I sincerely appreciate your time to learn more about my background and
                     experience.
-                    <br>
                 </p>
             </strong>
+        </div>
+    </section>
+
+    <!--slideshow section-->
+    <section>
+        <div id="slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/kiwi-mountains.JPG"
+                            alt="Mountains from New Zealand's South Island">
+                        <div class="text">Dedicated to solving complex problems and elevating projects.</div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/HTML_CSS_and_JavaScript.jpeg"
+                            alt="HTML, CSS, and JS logos">
+                        <div class="text">Building responsive, user-centric front-ends with HTML, CSS, and JavaScript
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Python.png" alt="Python logo">
+                        <div class="text">Architecting efficient and scalable back-end logic using Python</div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                        <div class="text">Developing robust enterprise solutions with C#, .NET, and MVC</div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/SQL_and_Database.jpg" alt="SQL logo">
+                        <div class="text">Managing data integrity through Database Design and SQL</div>
+                    </div>
+                    <!-- Slide 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/cpp_logo.png" alt="C++ logo">
+                        <div class="text">Leveraging high-performance systems programming with C and C++</div>
+                    </div>
+                    <!-- Slide 7 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/fake-run-NYC.jpg"
+                            alt="Picture after running, rollerblading, and riding bicycles from the Santa Monica Pier to Times Square">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Click here to get in
+                                touch</a></div>
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -58,15 +124,15 @@
             <div class="Column_1">
                 <h1>About</h1>
                 <p>
-                    I am a software developer with a deep passion for learning. I enjoy arduous adventures climbing
-                    mountains,
-                    on motorcylces, and behind a saxophone.
+                    Lifelong student, developer, and seeker of arduous paths. I find my flow in the climb. And that
+                    often includes trekking through mountains, riding the twisties on a motorcycle, or overanalyzing the
+                    possible applications of jazz theory that may improve my saxophone improvisation abilities.
                     <br>
                     <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech
                         Academy</a>’s Software Developer Boot Camp. I have learned the following web and
                     programming languages: HTML, CSS, JavaScript, SQL, C#, Python, and C/C++.
                     <br>
-                    <br>I am a full-stack developer and want to solve problems. <a href="#Contact">Contact</a> me below.
+                    <br>I am a full-stack developer and want to solve problems.<a href="#Contact">Contact</a> me below.
                 </p>
             </div>
         </div>
@@ -79,7 +145,7 @@
             <div class="Column_1">
                 <h1>GitHub</h1>
                 <p>
-                    My coding projects on my GitHub profile can be found here:
+                    My projects on my GitHub profile can be found here:
                     <br>
                 </p>
                 <p class="center"><a href="https://github.com/kylebryangaffney" target="_blank">Kyle Gaffney Github</a>
@@ -96,23 +162,23 @@
 
     <!--contact-->
     <section>
-        <div class="Row" id="Contact">
-            <!--contact image -left-->
-            <div class="Column_2 Column_tall">
-                <img src="images/motorcylce-selfie.jpg" alt="Contact_Image">
-            </div>
-            <!--contact form -right-->
-            <div class="Column_1 Column_tall">
-                <h1>Contact</h1>
-                <!--Where and how to interact with form data; updated with my formspree contact form POST action-->
-                <form action="https://formspree.io/f/mwvljyqa" method="POST">
-                    <label>Name:</label>
-                    <input type="text" placeholder="Please enter name">
-                    <label>Email:</label>
-                    <input type="text" id="Email" name="Email" placeholder="Please enter email">
-                    <label>Message:</label>
-                    <input type="text" id="Message" name="Message" placeholder="Please write message">
-                    <input type="submit" value="SUBMIT">
+        <div id="contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+                    <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                    <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                    <input type="text" placeholder="Type your message here" name="message">
+
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                 </form>
             </div>
         </div>
@@ -129,6 +195,8 @@
         </footer>
     </section>
 
+    <!--js functionality-->
+    <script src="JS/main.js"></script>
     <!---go daddy js-->
     <script>'undefined' === typeof _trfq || (window._trfq = []); 'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({ 'tccl.baseHost': 'secureserver.net' }, { 'ap': 'cpsh-oh' }, { 'server': 'p3plzcpnl505173' }, { 'dcenter': 'p3' }, { 'cp_id': '6828831' }, { 'cp_cl': '8' }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script>
     <script src="https://img1.wsimg.com/traffic-assets/js/tccl.min.js"></script>
