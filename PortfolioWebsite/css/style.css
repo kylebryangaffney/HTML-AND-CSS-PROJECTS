@@ -462,7 +462,8 @@ footer {
 }
 
 /* Input fields */
-.form-container input[type=text] {
+.form-container input[type=text],
+.form-container input[type=email] {
     width: 100%;
     padding: .93vw;
     margin: .6vw 0 .6vw 0;
