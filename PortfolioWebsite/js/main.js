@@ -47,3 +47,4 @@ document.addEventListener("click", function (event) {
     }
 }, false)
 
+document.getElementById("copyright-year").textContent = new Date().getFullYear();

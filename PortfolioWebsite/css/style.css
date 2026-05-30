@@ -11,9 +11,9 @@ body {
     margin: 0%;
     opacity: 1;
     transition: 2s opacity;
-    letter-spacing: .2vw;
+    letter-spacing: 0.04em;
+    font-size: clamp(14px, 1.5vw, 20px);
     font-family: Avant Garde, Helvetica;
-    font-size: 1.5vw;
     overflow-x: hidden;
     user-select: none;
 }
@@ -50,9 +50,9 @@ h1:hover {
 /* Paragraph elements reletive scaling */
 p {
     font-family: Perpetua, Rockwell Extra Bold;
-    text-align: justify;
-    letter-spacing: .1vw;
-    font-size: 2.5vw;
+    text-align: left;
+    letter-spacing: 0.02em;
+    font-size: clamp(15px, 2.5vw, 22px);
     padding-left: 1vw;
     padding-right: 1vw;
 }
@@ -140,10 +140,10 @@ footer {
     float: left;
     display: block;
     color: #fff;
-    padding: .75vw 1vw;
+    padding: clamp(8px, .75vw, 14px) clamp(10px, 1vw, 18px);
+    font-size: clamp(13px, 1.5vw, 18px);
     text-decoration: none;
     font-family: Avant Garde, Helvetica;
-    font-size: 1.5vw;
     text-align: center;
     position: relative;
     -webkit-animation: moveNavText 4s;
@@ -377,7 +377,8 @@ footer {
     float: left;
     width: 50%;
     padding: 1.6%;
-    height: 450px;
+    min-height: 450px;
+    height: auto;
     background-color: #fff3e8;
     /* Peach color */
 }
@@ -386,7 +387,8 @@ footer {
     float: left;
     width: 50%;
     padding: 1.6%;
-    height: 450px;
+    min-height: 450px;
+    height: auto;
     background-color: #2a0a4a;
     /* Original Purple */
     color: white;
@@ -606,11 +608,13 @@ button:hover,
 /* Media rules to increase the size of the columns for larger screens */
 @media screen and (min-width: 1725px) {
     .Column_1 {
-        height: 550px;
+        min-height: 550px;
+        height: auto;
     }
 
     .Column_2 {
-        height: 550px;
+        min-height: 550px;
+        height: auto;
     }
 }
 
